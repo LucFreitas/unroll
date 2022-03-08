@@ -275,7 +275,7 @@ function create_stop_list_for_a_route(stop_list, route_colour) {
 
         inner_html += `
           <span class="stop_dot" style="border-color:${route_colour};"></span>
-          <span><sup>${stop['properties'][`name:${current_language}`] || stop['properties']['name']['ref'] || i18n_messages['unamed stop']} ${add_name}</sup></span>
+          <span><sup>${stop['properties'][`name:${current_language}`] || stop['properties']['name'] || i18n_messages['unamed stop']} ${add_name}</sup></span>
 
           `
         inner_html += `
