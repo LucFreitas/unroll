@@ -268,7 +268,7 @@ function create_stop_list_for_a_route(stop_list, route_colour) {
 
         var add_name = "";
         if (additional_name_language){
-            var add_name = stop['properties']['name:'+ additional_name_language]['ref'] || "";
+            var add_name = stop['properties']['name:'+ additional_name_language] || "";
         }
 
         inner_html += `<div class="stop_item" style="border-left-color:${border_color};">`;
