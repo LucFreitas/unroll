@@ -83,7 +83,7 @@ function display_line_title(tags){
                 data-transport-line-code="${tags['ref'] || ' '}"
                 data-transport-line-color="${tags['colour'] || tags['vehicle:colour']}">
             </transport-thumbnail>
-            ${tags['name'] || "??" }
+            ${tags['ref'] || "??" }
         </h2>
     </div>
     `
