@@ -92,7 +92,7 @@ var line_data = (function() {
 
             } catch (error) {
                 console.error(error)
-                return "Oops, something went wrong"
+                return "Ops, alguma coisa deu errado"
             }
         }
     }
