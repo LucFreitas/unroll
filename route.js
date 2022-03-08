@@ -93,10 +93,10 @@ function display_line_title(tags){
 function display_line_details(tags, trip_number){
     var additional_detail = '';
     if (tags['wheelchair'] && tags['wheelchair'] != "no"){
-        additional_detail += `<p><i class="fa fa-fw fa-wheelchair w3-margin-right w3-large w3-text-junglebus"></i>${i18n_messages["Bicycle:"]} ${tags['bicycle']}</p>`
+        additional_detail += `<p><i class="fa fa-fw fa-wheelchair w3-margin-right w3-large w3-text-junglebus"></i>${i18n_messages["Wheelchair:"]} ${tags['wheelchair']}</p>`
     }
     if (tags['bicycle'] && tags['bicycle'] != "no"){
-        additional_detail += `<p><i class="fa fa-fw fa-solid fa-bicycle" w3-margin-right w3-large w3-text-junglebus"></i>${i18n_messages["School:"]} ${tags['school']}</p>`
+        additional_detail += `<p><i class="fa fa-fw fa-solid fa-bicycle w3-margin-right w3-large w3-text-junglebus"></i>${i18n_messages["Bicycle:"]} ${tags['bicycle']}</p>`
     }
     if (tags['school'] && tags['school'] != "no"){
         additional_detail += `<p><i class="fa fa-fw fa-graduation-cap w3-margin-right w3-large w3-text-junglebus"></i>${i18n_messages["School:"]} ${tags['school']}</p>`
