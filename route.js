@@ -268,14 +268,14 @@ function create_stop_list_for_a_route(stop_list, route_colour) {
 
         var add_name = "";
         if (additional_name_language){
-            var add_name = stop['properties']['name:'+ additional_name_language] || "";
+            var add_name = stop['properties']['name:'+ additional_name_language]['ref'] || "";
         }
 
         inner_html += `<div class="stop_item" style="border-left-color:${border_color};">`;
 
         inner_html += `
           <span class="stop_dot" style="border-color:${route_colour};"></span>
-          <span><sup>${stop['properties'][`name:${current_language}`] || stop['properties']['name'] || i18n_messages['unamed stop']} ${add_name}</sup></span>
+          <span><sup>${stop['properties'][`name:${current_language}`] || stop['properties']['name']['ref'] || i18n_messages['unamed stop']} ${add_name}</sup></span>
 
           `
         inner_html += `
