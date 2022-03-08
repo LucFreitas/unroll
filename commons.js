@@ -6,8 +6,8 @@ function get_parameter_from_url(param_name) {
 }
 
 //detect language, get the appropriate translation file, translate html content
-var available_languages = ["cs", "de", "en", "es", "fr", "hu", "it", "pl"];
-var current_language = "en"; //also used to get Osmose issue and Wikipedia extract
+var available_languages = ["cs", "de", "en", "es", "fr", "hu", "it", "pl", "pt_BR"];
+var current_language = "pt_BR"; //also used to get Osmose issue and Wikipedia extract
 var i18n_messages = {}
 async function load_translation_strings(){
     var user_language = navigator.language;
@@ -15,7 +15,7 @@ async function load_translation_strings(){
         var i18n_file = `i18n/${user_language}.json`;
         current_language = user_language;
     } else {
-        var i18n_file = "i18n/en.json"
+        var i18n_file = "i18n/pt_BR.json"
     }
 
     await fetch(i18n_file).then(function(data) {
