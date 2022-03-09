@@ -1,6 +1,8 @@
 # Sobre
 Este fork tem como objetivo experimentar e adaptar o projeto unroll para o Brasil, em especial, o sistema de transporte urbano na Grande Vitória, Espírito Santo.
 
+Abaixo, a descrição original do projeto:
+
 
 # Unroll
 
