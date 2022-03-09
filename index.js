@@ -95,7 +95,7 @@ function display_from_overpass(use_geo){
         if (!town){
             console.error("no town")
             var error_town = document.getElementById("error_town");
-            error_town.innerHTML = `<p class="w3-text-red">Please enter a town name</p>`
+            error_town.innerHTML = `<p class="w3-text-red">Por favor, insira o nome de uma cidade</p>`
             return
         }
         var overpass_url = `
